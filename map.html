@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <style>
+        .listbox{width: 400px; height: 600px; border: 1px solid grey; margin: 1px; position: relative}
+        .listbox .listpic{width: 400px; height: 600px; overflow: hidden}
+        .listbox ul li a{color: white; font-size: 18px; text-decoration: none}
+        .listbox ul li{width: 20px; height: 20px; text-align: center; color: white; margin: 2px; background: rgba(0, 0, 0, 0.4); float: left; list-style: none}
+        .listbox ul{position: absolute; right: 5px; bottom: -5px}
+        .listbox ul li:hover{background: rgba(0, 0, 0, 0.8)}
+        </style>
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_4127e39ed71f4dbb97035168df8393ce {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="folium-map" id="map_4127e39ed71f4dbb97035168df8393ce" ></div>
+</body>
+<script>
+
+
+        var bounds = null;
+
+
+    var map_4127e39ed71f4dbb97035168df8393ce = L.map(
+        'map_4127e39ed71f4dbb97035168df8393ce', {
+        center: [23.5, 122],
+        zoom: 2.45,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+L.control.scale().addTo(map_4127e39ed71f4dbb97035168df8393ce);
+
+
+    var tile_layer_9110c4960d2341e28e961b08c04daa80 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_4127e39ed71f4dbb97035168df8393ce);
+
+        var marker_7207fcc4846b4b9cb6ba0501438acb98 = L.marker(
+            [43.4519831, 142.8197834],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_4127e39ed71f4dbb97035168df8393ce);
+
+
+
+                var icon_78c6ca4c930c494290528499ccb0de49 = L.AwesomeMarkers.icon({
+                    icon: 'camera',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7207fcc4846b4b9cb6ba0501438acb98.setIcon(icon_78c6ca4c930c494290528499ccb0de49);
+
+
+            var popup_871f19e141b6400695c751d0e7138984 = L.popup({maxWidth: '100%'
+
+            });
+
+
+                var html_93941456afb348cf8ddc2082acac1233 = $(`<div id="html_93941456afb348cf8ddc2082acac1233" style="width: 100.0%; height: 100.0%;">                 <h3>北海道</h3> <p>二世谷、札幌</p> <div class="listbox"> <div class="listpic">                 <img src="https://i.imgur.com/NJEmUPs.jpg" alt="" id='scene1' width='100%'>                 <img src="https://i.imgur.com/S2ZikGV.jpg" alt="" id='scene2' width='100%'>                 <img src="https://i.imgur.com/pSTCbhs.jpg" alt="" id='scene3' width='100%'>                 </div> <ul> <li><a href="#scene1">1</a></li> <li><a href="#scene2">2</a></li> <li><a href="#scene3">3</a></li> </ul> </div>               </div>`)[0];
+                popup_871f19e141b6400695c751d0e7138984.setContent(html_93941456afb348cf8ddc2082acac1233);
+
+
+            marker_7207fcc4846b4b9cb6ba0501438acb98.bindPopup(popup_871f19e141b6400695c751d0e7138984)
+            ;
+
+
+
+
+        marker_7207fcc4846b4b9cb6ba0501438acb98.bindTooltip(
+            `<div>`
+            + `北海道` + `</div>`,
+            {"sticky": true}
+        );
+
+
+        var marker_784dff7a6dd449619ba55fb88b015bfd = L.marker(
+            [35.6828387, 139.7594549],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_4127e39ed71f4dbb97035168df8393ce);
+
+
+
+                var icon_ed5d8604142441f3bbcecac86003aec5 = L.AwesomeMarkers.icon({
+                    icon: 'camera',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_784dff7a6dd449619ba55fb88b015bfd.setIcon(icon_ed5d8604142441f3bbcecac86003aec5);
+
+
+            var popup_34deff1ae82940c2867b68a1dc821123 = L.popup({maxWidth: '100%'
+
+            });
+
+
+                var html_a118700b09094bfab3f17308c4af925f = $(`<div id="html_a118700b09094bfab3f17308c4af925f" style="width: 100.0%; height: 100.0%;">               <h3>東京</h3> <p>東京玩不完</p> <div class="listbox"> <div class="listpic">               <img src="https://i.imgur.com/iRP2sJg.jpg" alt="" id='scene1' width='100%'>               <img src="https://i.imgur.com/nxaSJRS.jpg" alt="" id='scene2' width='100%'>               <img src="https://i.imgur.com/6toLq8F.jpg" alt="" id='scene3' width='100%'>               </div> <ul> <li><a href="#scene1">1</a></li> <li><a href="#scene2">2</a></li> <li><a href="#scene3">3</a></li> </ul> </div>               </div>`)[0];
+                popup_34deff1ae82940c2867b68a1dc821123.setContent(html_a118700b09094bfab3f17308c4af925f);
+
+
+            marker_784dff7a6dd449619ba55fb88b015bfd.bindPopup(popup_34deff1ae82940c2867b68a1dc821123)
+            ;
+
+
+
+
+        marker_784dff7a6dd449619ba55fb88b015bfd.bindTooltip(
+            `<div>`
+            + `東京` + `</div>`,
+            {"sticky": true}
+        );
+
+
+        var marker_2952f5952e4c4702b82d30ff64c22f7e = L.marker(
+            [34.6198813, 135.490357],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_4127e39ed71f4dbb97035168df8393ce);
+
+
+
+                var icon_121e7728d36141c69114186c802e28c8 = L.AwesomeMarkers.icon({
+                    icon: 'camera',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2952f5952e4c4702b82d30ff64c22f7e.setIcon(icon_121e7728d36141c69114186c802e28c8);
+
+
+            var popup_07bece676710471cb2cef23891e80484 = L.popup({maxWidth: '100%'
+
+            });
+
+
+                var html_4d14d15906014bb4a7edeaa5f03a2613 = $(`<div id="html_4d14d15906014bb4a7edeaa5f03a2613" style="width: 100.0%; height: 100.0%;">               <h3>大阪</h3> <p>大阪、奈良、宇治、京都</p> <div class="listbox"> <div class="listpic">               <img src="https://i.imgur.com/reAopdH.jpg" alt="" id='scene1' width='100%'>               <img src="https://i.imgur.com/tlt2K30.jpg" alt="" id='scene2' width='100%'>               <img src="https://i.imgur.com/zKPc6hh.jpg" alt="" id='scene3' width='100%'>               </div> <ul> <li><a href="#scene1">1</a></li> <li><a href="#scene2">2</a></li> <li><a href="#scene3">3</a></li> </ul> </div>               </div>`)[0];
+                popup_07bece676710471cb2cef23891e80484.setContent(html_4d14d15906014bb4a7edeaa5f03a2613);
+
+
+            marker_2952f5952e4c4702b82d30ff64c22f7e.bindPopup(popup_07bece676710471cb2cef23891e80484)
+            ;
+
+
+
+
+        marker_2952f5952e4c4702b82d30ff64c22f7e.bindTooltip(
+            `<div>`
+            + `大阪` + `</div>`,
+            {"sticky": true}
+        );
+
+
+        var marker_eda92541686f408fa91617f3e08279c0 = L.marker(
+            [26.4748948, 127.91146866408414],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_4127e39ed71f4dbb97035168df8393ce);
+
+
+
+                var icon_9b90f48e585d4ab2a97cf0c5a97a6d08 = L.AwesomeMarkers.icon({
+                    icon: 'camera',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_eda92541686f408fa91617f3e08279c0.setIcon(icon_9b90f48e585d4ab2a97cf0c5a97a6d08);
+
+
+            var popup_73a9fd2d75a347e99bed22a1c84fc7cd = L.popup({maxWidth: '100%'
+
+            });
+
+
+                var html_5803773d6a9b4306b0608b89111dcceb = $(`<div id="html_5803773d6a9b4306b0608b89111dcceb" style="width: 100.0%; height: 100.0%;">               <h3>沖繩</h3> <p>離島都沒去</p> <div class="listbox"> <div class="listpic">               <img src="https://i.imgur.com/Fcs5WZH.jpg" alt="" id='scene1' width='100%'>               <img src="https://i.imgur.com/WzjNyqu.jpg" alt="" id='scene2' width='100%'>               <img src="https://i.imgur.com/0QhK0kM.jpg" alt="" id='scene3' width='100%'>               </div> <ul> <li><a href="#scene1">1</a></li> <li><a href="#scene2">2</a></li> <li><a href="#scene3">3</a></li> </ul> </div>               </div>`)[0];
+                popup_73a9fd2d75a347e99bed22a1c84fc7cd.setContent(html_5803773d6a9b4306b0608b89111dcceb);
+
+
+            marker_eda92541686f408fa91617f3e08279c0.bindPopup(popup_73a9fd2d75a347e99bed22a1c84fc7cd)
+            ;
+
+
+
+
+        marker_eda92541686f408fa91617f3e08279c0.bindTooltip(
+            `<div>`
+            + `沖繩` + `</div>`,
+            {"sticky": true}
+        );
+
+
+        var marker_422c8322e205489482d18c7474b2f556 = L.marker(
+            [51.5073219, -0.1276474],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_4127e39ed71f4dbb97035168df8393ce);
+
+
+
+                var icon_236a0d5b2b234aa7902a21f52d239ddc = L.AwesomeMarkers.icon({
+                    icon: 'camera',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_422c8322e205489482d18c7474b2f556.setIcon(icon_236a0d5b2b234aa7902a21f52d239ddc);
+
+
+            var popup_bc869164f88948ee820994f25f2ba1b8 = L.popup({maxWidth: '100%'
+
+            });
+
+
+                var html_9ae2b75246a44557b2f4565f8e7210f0 = $(`<div id="html_9ae2b75246a44557b2f4565f8e7210f0" style="width: 100.0%; height: 100.0%;">               <h3>倫敦</h3> <p>倫敦、巴斯</p> <div class="listbox"> <div class="listpic">               <img src="https://i.imgur.com/aiIitEo.jpg?2" alt="" id='scene1' width='100%'>               <img src="https://i.imgur.com/HI5kgMm.jpg?1" alt="" id='scene2' width='100%'>               <img src="https://i.imgur.com/tYQZ5WL.jpg?2" alt="" id='scene3' width='100%'> </div> <ul> <li><a href="#scene1">1</a></li> <li><a href="#scene2">2</a></li> <li><a href="#scene3">3</a></li> </ul> </div>               </div>`)[0];
+                popup_bc869164f88948ee820994f25f2ba1b8.setContent(html_9ae2b75246a44557b2f4565f8e7210f0);
+
+
+            marker_422c8322e205489482d18c7474b2f556.bindPopup(popup_bc869164f88948ee820994f25f2ba1b8)
+            ;
+
+
+
+
+        marker_422c8322e205489482d18c7474b2f556.bindTooltip(
+            `<div>`
+            + `倫敦` + `</div>`,
+            {"sticky": true}
+        );
+
+</script>
