@@ -6,13 +6,13 @@
 #### Asia:
 Tokyo, Hokkaido, Osaka, Okinawa <br>
 HongKong, Macau <br>
-Manila, Bangkok, Kuala Lumpur, Angkor Wat
+Angkor Wat, Manila, Bangkok, Kuala Lumpur
 
 #### Europ:
 London
 
 #### America:
-Wisconsin dells, Guam, Manhattan
+Wisconsin Dells, Manhattan, Guam
 
 
 # Tools:
