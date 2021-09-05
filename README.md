@@ -3,5 +3,17 @@
 # Application:
 りょこうしゃしん
 
+#### Asia:
+Tokyo, Hokkaido, Osaka, Okinawa <br>
+HongKong, Macau <br>
+Manila, Bangkok, Kuala Lumpur, Angkor Wat
+
+#### Europ:
+London
+
+#### America:
+Wisconsin dells, Guam, Manhattan
+
+
 # Tools:
-folium, HTML, CSS
+folium, geocoder, HTML, CSS
